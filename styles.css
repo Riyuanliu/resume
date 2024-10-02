@@ -14,6 +14,9 @@ header {
 }
 
 header img {
+    position: relative;
+    top: 10px;
+    left: 10px;
     border-radius: 50%;
     width: 120px;
     height: 120px;
@@ -21,6 +24,9 @@ header img {
     margin-bottom: 10px;
 }
 
+header nav{
+    flex-direction: row;
+}
 header h1 {
     margin: 0;
     font-size: 2em;
@@ -37,6 +43,30 @@ header a {
 
 header a:hover {
     text-decoration: underline;
+}
+
+nav ul {
+
+    list-style-type: none; 
+    padding: 0;            
+    margin: 0;             
+    display: flex;         
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;    /* Add spacing between the items */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: black;          /* Set link color */
+    font-family: Arial, sans-serif; /* Set font */
+    padding: 10px;         /* Add padding for clickable area */
+}
+
+nav a:hover {
+    color: blue;           /* Change color on hover */
 }
 
 /* Main Content Styles */
@@ -59,6 +89,7 @@ h2 {
 .section-content {
     margin: 10px 0;
 }
+
 
 ul {
     list-style-type: disc;
@@ -88,6 +119,9 @@ footer {
     padding: 10px;
     text-align: center;
     border-top: 1px solid #ddd;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 
 /* Responsive Styles */
